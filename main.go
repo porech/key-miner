@@ -63,6 +63,16 @@ func main() {
 	}
 
 	wantedSequence := flag.Arg(0)
+	if len(wantedSequence) == 0 {
+		fmt.Fprintf(os.Stderr, "Error: wanted-sequence cannot be empty\n")
+		os.Exit(1)
+	}
+	for _, c := range wantedSequence {
+		if !strings.Contains("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", string(c)) {
+			fmt.Fprintf(os.Stderr, "Error: wanted-sequence contains invalid characters: only Base64-allowed ones are allowed (a-z, A-Z, 0-9, +, /).\n")
+			os.Exit(1)
+		}
+	}
 
 	comment := *keyComment
 	if *emptyComment {
