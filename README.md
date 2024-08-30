@@ -42,4 +42,4 @@ Those are the optional flags:
 ## Performance
 
 It really depends on your CPU and, well, randomness. The correct key may pop up immediately or never, you can not know.
-However, you should expect it to be really fast with 3 characters, and reasonably fast with 4 characters. I had success with 5 characters on a fast computer within 10 to 20 minutes. More than 5 characters are unlikely to produce a result in a reasonable amount of time, but you can try!
+However, you should expect it to be really fast (less than one second) with up to 3 characters, and reasonably fast (some seconds) with 4 characters. I had success with 5 characters on a fast computer within 10 to 20 minutes. More than 5 characters are unlikely to produce a result in a reasonable amount of time, but you can try!
