@@ -14,7 +14,7 @@ Clone the repository and compile with:
 go build
 ```
 
-The only requried and accepted arguments is the string you want the key to contain.
+The only required argument is the string you want the public key to contain.
 
 Example:
 
